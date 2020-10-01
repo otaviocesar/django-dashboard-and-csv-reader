@@ -53,7 +53,7 @@ def login_view(request):
                     return redirect('home')
 
             else:
-                error_message = 'Login ou senha incorreta!'
+                error_message = 'Login ou senha incorretos!'
                 
     return render(request, 'login.html', {'form':form, 'error_message': error_message})
     
