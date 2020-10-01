@@ -26,7 +26,7 @@ SECRET_KEY = 'k-a1fi8&73uy6cf4-ng68ldc_41e$w%me5jee6gmb#_0w&x3f7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'https://sistema-eat.herokuapp.com', config('SERVER', default='127.0.0.1')]
+ALLOWED_HOSTS = ['https://sistema-eat.herokuapp.com']
 
 
 # Application definition
