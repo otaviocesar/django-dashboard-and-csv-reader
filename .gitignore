@@ -1,19 +1,25 @@
-
-# Created by https://www.gitignore.io/api/django
-# Edit at https://www.gitignore.io/?templates=django
-
-### Django ###
-*.log
-*.pot
-*.pyc
+# byte-compiled / optimized / DLL files
 __pycache__/
-local_settings.py
+*.py[cod]
 
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
+# tests and coverage
+*.pytest_cache
+.coverage
+
+# database & logs
+*.db
+*.sqlite3
+*.log
+
+# venv
+env
+venv
+
+# other
+.DS_Store
+
+# javascript
+package-lock.json
+
+staticfiles/*
+!staticfiles/.gitkeep 
