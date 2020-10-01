@@ -1,0 +1,326 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}home{% endblock title %}
+
+{% block content %}
+<div class="pcoded-content">
+  <div class="pcoded-inner-content">
+      <!-- [ breadcrumb ] start -->
+
+      <!-- [ breadcrumb ] end -->
+      <div class="main-body">
+          <div class="page-wrapper">
+              <!-- [ Main Content ] start -->
+              <div class="row">
+
+<!--[ section ] start-->
+<div class="col-md-6 col-xl-4">
+  <div class="card daily-sales">
+      <div class="card-block">
+          <h6 class="mb-4">C36</h6>
+<!--           <div class="card-header">
+            <h5>C36</h5>
+            </div> -->
+          <div class="row d-flex align-items-center">
+            <div class="table-responsive">
+              <table class="table table-hover">
+                  <tbody>
+                    {% for l in locUnits %}
+                    {% if l.number >= 361 and 399 >= l.number %}
+                      <tr class="unread">
+                          <td>
+                            {% if l.days >= 0 and 15 >= l.days %}
+                                <!-- <span class="badge badge-success">{{ l.name }}</span> -->
+                                <button type="button" class="btn btn-success">{{ l.name }}</button>
+                              {% endif %}
+                              {% if l.days >= 16 and 30 >= l.days %}
+                              <button type="button" class="btn btn-warning">{{ l.name }}</button>
+                              <!-- <span class="badge badge-warning">{{ l.name }}</span> -->
+                            {% endif %}
+                            {% if l.days > 30 %}
+                            <button type="button" class="btn btn-danger">{{ l.name }}</button>
+                            <!-- <span class="badge badge-danger">{{ l.name }}</span> -->
+                          {% endif %}
+                          </td>
+                          <td>
+                            <h6 class="text-muted"><i class="fas fa-circle text-c-green f-10 m-r-15"></i>{{ l.date |date:"d/m/Y" }}</h6>
+                        </td>
+                      </tr>
+                      {% endif %} 
+                    {% endfor %}
+                  </tbody>
+              </table>
+          </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!--[ section ] end-->
+
+<!--[ section ] start-->
+<div class="col-md-6 col-xl-4">
+  <div class="card daily-sales">
+      <div class="card-block">
+          <h6 class="mb-4">SD40</h6>
+<!--           <div class="card-header">
+            <h5>SD40</h5>
+            </div> -->
+          <div class="row d-flex align-items-center">
+            <div class="table-responsive">
+              <table class="table table-hover">
+                  <tbody>
+                    {% for l in locUnits %}
+                    {% if l.number >= 401 and 429 >= l.number %}
+                      <tr class="unread">
+                          <td>
+                            {% if l.days >= 0 and 15 >= l.days %}
+                                <!-- <span class="badge badge-success">{{ l.name }}</span> -->
+                                <button type="button" class="btn btn-success">{{ l.name }}</button>
+                              {% endif %}
+                              {% if l.days >= 16 and 30 >= l.days %}
+                              <button type="button" class="btn btn-warning">{{ l.name }}</button>
+                              <!-- <span class="badge badge-warning">{{ l.name }}</span> -->
+                            {% endif %}
+                            {% if l.days > 30 %}
+                            <button type="button" class="btn btn-danger">{{ l.name }}</button>
+                            <!-- <span class="badge badge-danger">{{ l.name }}</span> -->
+                          {% endif %}
+                          </td>
+                          <td>
+                            <h6 class="text-muted"><i class="fas fa-circle text-c-green f-10 m-r-15"></i>{{ l.date |date:"d/m/Y" }}</h6>
+                        </td>
+                      </tr>
+                      {% endif %} 
+                    {% endfor %}
+                  </tbody>
+              </table>
+          </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!--[ section ] end-->
+
+<!--[ section ] start-->
+<div class="col-md-6 col-xl-4">
+  <div class="card daily-sales">
+      <div class="card-block">
+          <h6 class="mb-4">DASH8</h6>
+<!--           <div class="card-header">
+            <h5>DASH8</h5>
+            </div> -->
+          <div class="row d-flex align-items-center">
+            <div class="table-responsive">
+              <table class="table table-hover">
+                  <tbody>
+                    {% for l in locUnits %}
+                    {% if l.number >= 501 and 504 >= l.number %}
+                      <tr class="unread">
+                          <td>
+                            {% if l.days >= 0 and 15 >= l.days %}
+                                <!-- <span class="badge badge-success">{{ l.name }}</span> -->
+                                <button type="button" class="btn btn-success">{{ l.name }}</button>
+                              {% endif %}
+                              {% if l.days >= 16 and 30 >= l.days %}
+                              <button type="button" class="btn btn-warning">{{ l.name }}</button>
+                              <!-- <span class="badge badge-warning">{{ l.name }}</span> -->
+                            {% endif %}
+                            {% if l.days > 30 %}
+                            <button type="button" class="btn btn-danger">{{ l.name }}</button>
+                            <!-- <span class="badge badge-danger">{{ l.name }}</span> -->
+                          {% endif %}
+                          </td>
+                          <td>
+                            <h6 class="text-muted"><i class="fas fa-circle text-c-green f-10 m-r-15"></i>{{ l.date |date:"d/m/Y" }}</h6>
+                        </td>
+                      </tr>
+                      {% endif %} 
+                    {% endfor %}
+                  </tbody>
+              </table>
+          </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!--[ section ] end-->
+
+<!--[ section ] start-->
+<div class="col-md-6 col-xl-4">
+  <div class="card daily-sales">
+      <div class="card-block">
+          <h6 class="mb-4">SD70</h6>
+<!--           <div class="card-header">
+            <h5>SD70</h5>
+            </div> -->
+          <div class="row d-flex align-items-center">
+            <div class="table-responsive">
+              <table class="table table-hover">
+                  <tbody>
+                    {% for l in locUnits %}
+                    {% if l.number >= 701 and 729 >= l.number %}
+                      <tr class="unread">
+                          <td>
+                            {% if l.days >= 0 and 15 >= l.days %}
+                                <!-- <span class="badge badge-success">{{ l.name }}</span> -->
+                                <button type="button" class="btn btn-success">{{ l.name }}</button>
+                              {% endif %}
+                              {% if l.days >= 16 and 30 >= l.days %}
+                              <button type="button" class="btn btn-warning">{{ l.name }}</button>
+                              <!-- <span class="badge badge-warning">{{ l.name }}</span> -->
+                            {% endif %}
+                            {% if l.days > 30 %}
+                            <button type="button" class="btn btn-danger">{{ l.name }}</button>
+                            <!-- <span class="badge badge-danger">{{ l.name }}</span> -->
+                          {% endif %}
+                          </td>
+                          <td>
+                            <h6 class="text-muted"><i class="fas fa-circle text-c-green f-10 m-r-15"></i>{{ l.date |date:"d/m/Y" }}</h6>
+                        </td>
+                      </tr>
+                      {% endif %} 
+                    {% endfor %}
+                  </tbody>
+              </table>
+          </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!--[ section ] end-->
+
+<!--[ section ] start-->
+<div class="col-md-6 col-xl-4">
+  <div class="card daily-sales">
+      <div class="card-block">
+          <h6 class="mb-4">DASH 9</h6>
+<!--           <div class="card-header">
+            <h5>DASH 9</h5>
+            </div> -->
+          <div class="row d-flex align-items-center">
+            <div class="table-responsive">
+              <table class="table table-hover">
+                  <tbody>
+                    {% for l in locUnits %}
+                    {% if l.number >= 9001 and 9023 >= l.number %}
+                      <tr class="unread">
+                          <td>
+                            {% if l.days >= 0 and 15 >= l.days %}
+                                <!-- <span class="badge badge-success">{{ l.name }}</span> -->
+                                <button type="button" class="btn btn-success">{{ l.name }}</button>
+                              {% endif %}
+                              {% if l.days >= 16 and 30 >= l.days %}
+                              <button type="button" class="btn btn-warning">{{ l.name }}</button>
+                              <!-- <span class="badge badge-warning">{{ l.name }}</span> -->
+                            {% endif %}
+                            {% if l.days > 30 %}
+                            <button type="button" class="btn btn-danger">{{ l.name }}</button>
+                            <!-- <span class="badge badge-danger">{{ l.name }}</span> -->
+                          {% endif %}
+                          </td>
+                          <td>
+                            <h6 class="text-muted"><i class="fas fa-circle text-c-green f-10 m-r-15"></i>{{ l.date |date:"d/m/Y" }}</h6>
+                        </td>
+                      </tr>
+                      {% endif %} 
+                      {% if l.number >= 3932 and 3985 >= l.number %}
+                      <tr class="unread">
+                          <td>
+                            {% if l.days >= 0 and 15 >= l.days %}
+                                <!-- <span class="badge badge-success">{{ l.name }}</span> -->
+                                <button type="button" class="btn btn-success">{{ l.name }}</button>
+                              {% endif %}
+                              {% if l.days >= 16 and 30 >= l.days %}
+                              <button type="button" class="btn btn-warning">{{ l.name }}</button>
+                              <!-- <span class="badge badge-warning">{{ l.name }}</span> -->
+                            {% endif %}
+                            {% if l.days > 30 %}
+                            <button type="button" class="btn btn-danger">{{ l.name }}</button>
+                            <!-- <span class="badge badge-danger">{{ l.name }}</span> -->
+                          {% endif %}
+                          </td>
+                          <td>
+                            <h6 class="text-muted"><i class="fas fa-circle text-c-green f-10 m-r-15"></i>{{ l.date |date:"d/m/Y" }}</h6>
+                        </td>
+                      </tr>
+                      {% endif %} 
+                      {% if l.number >= 801 and 867 >= l.number %}
+                      <tr class="unread">
+                          <td>
+                            {% if l.days >= 0 and 15 >= l.days %}
+                                <!-- <span class="badge badge-success">{{ l.name }}</span> -->
+                                <button type="button" class="btn btn-success">{{ l.name }}</button>
+                              {% endif %}
+                              {% if l.days >= 16 and 30 >= l.days %}
+                              <button type="button" class="btn btn-warning">{{ l.name }}</button>
+                              <!-- <span class="badge badge-warning">{{ l.name }}</span> -->
+                            {% endif %}
+                            {% if l.days > 30 %}
+                            <button type="button" class="btn btn-danger">{{ l.name }}</button>
+                            <!-- <span class="badge badge-danger">{{ l.name }}</span> -->
+                          {% endif %}
+                          </td>
+                          <td>
+                            <h6 class="text-muted"><i class="fas fa-circle text-c-green f-10 m-r-15"></i>{{ l.date |date:"d/m/Y" }}</h6>
+                        </td>
+                      </tr>
+                      {% endif %} 
+                    {% endfor %}
+                  </tbody>
+              </table>
+          </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!--[ section ] end-->
+
+<!--[ section ] start-->
+<div class="col-md-6 col-xl-4">
+  <div class="card daily-sales">
+      <div class="card-block">
+          <h6 class="mb-4">EVOLUTION</h6>
+<!--           <div class="card-header">
+            <h5>EVOLUTION</h5>
+            </div> -->
+          <div class="row d-flex align-items-center">
+            <div class="table-responsive">
+              <table class="table table-hover">
+                  <tbody>
+                    {% for l in locUnits %}
+                    {% if l.number >= 211 and 298 >= l.number %}
+                      <tr class="unread">
+                          <td>
+                            {% if l.days >= 0 and 15 >= l.days %}
+                                <!-- <span class="badge badge-success">{{ l.name }}</span> -->
+                                <button type="button" class="btn btn-success">{{ l.name }}</button>
+                              {% endif %}
+                              {% if l.days >= 16 and 30 >= l.days %}
+                              <button type="button" class="btn btn-warning">{{ l.name }}</button>
+                              <!-- <span class="badge badge-warning">{{ l.name }}</span> -->
+                            {% endif %}
+                            {% if l.days > 30 %}
+                            <button type="button" class="btn btn-danger">{{ l.name }}</button>
+                            <!-- <span class="badge badge-danger">{{ l.name }}</span> -->
+                          {% endif %}
+                          </td>
+                          <td>
+                            <h6 class="text-muted"><i class="fas fa-circle text-c-green f-10 m-r-15"></i>{{ l.date |date:"d/m/Y" }}</h6>
+                        </td>
+                      </tr>
+                      {% endif %} 
+                    {% endfor %}
+                  </tbody>
+              </table>
+          </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!--[ section ] end-->
+</div>
+</div>
+</div>
+</div>
+</div>
+{% endblock content %}
