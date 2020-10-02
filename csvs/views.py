@@ -40,8 +40,6 @@ def upload_file_view(request):
                         #print(diferenca.days) # diferença em dias
                         #datetime_format = "%d/%m/%Y  %H:%M:%S"
                         #dataAntiga = "2018-05-09T05:05:34Z"
-                        #event_date = row[1]
-                        #event_date = row[1] + ' ' + row[2]
                         date_string = row[1]
                     
                         date_object = date(*map(int, reversed(date_string.split("/"))))
